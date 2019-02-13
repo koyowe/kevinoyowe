@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://www.michaelchourdakis.com/ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Kevin Oyowe Home Page</title>
+<link href="resources/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: -webkit-linear-gradient(45deg, #e10522 0%, rgba(225, 5, 34, 0) 70%), -webkit-linear-gradient(315deg, #3105d1 10%, rgba(49, 5, 209, 0) 80%), -webkit-linear-gradient(225deg, #0adbd8 10%, rgba(10, 219, 216, 0) 80%), -webkit-linear-gradient(135deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);
+  background: linear-gradient(45deg, #e10522 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #3105d1 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0adbd8 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);
+}
+
+.absolute-center,
+.menu,
+.menu .btn .fa,
+.menu .btn.trigger .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.menu {
+  width: 5em;
+  height: 5em;
+}
+
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.menu .btn .fa {
+  font-size: 3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.menu .btn.trigger:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.menu .btn.trigger:hover .line { background-color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger:hover .line:before,
+.menu .btn.trigger:hover .line:after { background-color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger .line {
+  width: 60%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+
+.menu .btn.trigger .line:before,
+.menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu .btn.trigger .line:before {
+  top: -12px;
+  -webkit-transform-origin: 15% 100%;
+  -ms-transform-origin: 15% 100%;
+  transform-origin: 15% 100%;
+}
+
+.menu .btn.trigger .line:after {
+  top: 12px;
+  -webkit-transform-origin: 25% 30%;
+  -ms-transform-origin: 25% 30%;
+  transform-origin: 25% 30%;
+}
+
+.menu .rotater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+
+.menu.active .trigger .line {
+  height: 0px;
+  top: 45%;
+}
+
+.menu.active .trigger .line:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 110%;
+}
+
+.menu.active .trigger .line:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 110%;
+}
+
+/* horrible things are happening here
+for some reason nth-child(1) is always busy and elements starting from 2 */
+
+.rotater:nth-child(1) {
+  -webkit-transform: rotate(-22.5deg);
+  -ms-transform: rotate(-22.5deg);
+  transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(22.5deg);
+  -ms-transform: translateX(-10em) rotate(22.5deg);
+  transform: translateX(-10em) rotate(22.5deg);
+}
+
+.rotater:nth-child(2) {
+  -webkit-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-22.5deg);
+  -ms-transform: translateX(-10em) rotate(-22.5deg);
+  transform: translateX(-10em) rotate(-22.5deg);
+}
+
+.rotater:nth-child(3) {
+  -webkit-transform: rotate(67.5deg);
+  -ms-transform: rotate(67.5deg);
+  transform: rotate(67.5deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-67.5deg);
+  -ms-transform: translateX(-10em) rotate(-67.5deg);
+  transform: translateX(-10em) rotate(-67.5deg);
+}
+
+.rotater:nth-child(4) {
+  -webkit-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-112.5deg);
+  -ms-transform: translateX(-10em) rotate(-112.5deg);
+  transform: translateX(-10em) rotate(-112.5deg);
+}
+
+.rotater:nth-child(5) {
+  -webkit-transform: rotate(157.5deg);
+  -ms-transform: rotate(157.5deg);
+  transform: rotate(157.5deg);
+}
+
+.menu.active .rotater:nth-child(5) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-157.5deg);
+  -ms-transform: translateX(-10em) rotate(-157.5deg);
+  transform: translateX(-10em) rotate(-157.5deg);
+}
+
+.rotater:nth-child(6) {
+  -webkit-transform: rotate(202.5deg);
+  -ms-transform: rotate(202.5deg);
+  transform: rotate(202.5deg);
+}
+
+.menu.active .rotater:nth-child(6) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-202.5deg);
+  -ms-transform: translateX(-10em) rotate(-202.5deg);
+  transform: translateX(-10em) rotate(-202.5deg);
+}
+
+.rotater:nth-child(7) {
+  -webkit-transform: rotate(247.5deg);
+  -ms-transform: rotate(247.5deg);
+  transform: rotate(247.5deg);
+}
+
+.menu.active .rotater:nth-child(7) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-247.5deg);
+  -ms-transform: translateX(-10em) rotate(-247.5deg);
+  transform: translateX(-10em) rotate(-247.5deg);
+}
+
+.rotater:nth-child(8) {
+  -webkit-transform: rotate(292.5deg);
+  -ms-transform: rotate(292.5deg);
+  transform: rotate(292.5deg);
+}
+
+.menu.active .rotater:nth-child(8) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-292.5deg);
+  -ms-transform: translateX(-10em) rotate(-292.5deg);
+  transform: translateX(-10em) rotate(-292.5deg);
+}
+
+.rotater:nth-child(9) {
+  -webkit-transform: rotate(337.5deg);
+  -ms-transform: rotate(337.5deg);
+  transform: rotate(337.5deg);
+}
+
+.menu.active .rotater:nth-child(9) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-337.5deg);
+  -ms-transform: translateX(-10em) rotate(-337.5deg);
+  transform: translateX(-10em) rotate(-337.5deg);
+}
+
+background:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+</style>
+</head>
+
+<body style="background-image:url(resources/images/pages/nakuru_site_visit.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;  background-color: rgba(217,52,107,0.75); background-blend-mode: lighten;">
+
+<div >
+
+  <div class="menu">
+  <div class="btn trigger" style="background-color:orange">
+    <span class="line"></span>
+  </div>
+  <div class="icons">
+    <div class="rotater" >
+      <div class="btn btn-icon" style="background-image:url(resources/images/pages/emchr.jpg); background-size: cover; background-position: center;">
+        <a href="http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=358302" target="_blank"><i class="fa fa-facebook" ></i></a>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon" style="background-image:url(resources/images/pages/openmrs.png); background-size: cover; background-position: center;">
+        <a href="https://www.facebook.com/chourdakismichael" target="_blank"><i class="fa fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon" style="background-image:url(resources/images/pages/proms.png); background-size: cover; background-position: center;">
+        <a href="http://www.michaelchourdakis.com/trv" target="_blank"><i class="fa fa-plane"></i></a>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon" style="background-image:url(resources/images/pages/library.jpg); background-size: cover; background-position: center;">
+	<a href="http://www.michaelchourdakis.com/love" target="_blank"><i class="fa fa-heart"></i></a>
+      </div>
+    </div>
+	  <div class="rotater">
+		  <div class="btn btn-icon" style="background-image:url(resources/images/pages/robotics.jpg); background-size: cover; background-position: center;">
+			  <a href="http://www.michaelchourdakis.com/v/gr" target="_blank"><i class="fa fa-university"></i></a>
+		  </div>
+	  </div>
+	  <div class="rotater">
+		  <div class="btn btn-icon"  style="background-image:url(resources/images/pages/college.png); background-size: cover; background-position: center;">
+			  <a href="http://www.michaelchourdakis.com/virtualclass" target="_blank"><i class="fa fa-book"></i></a>
+		  </div>
+	  </div>
+	  <div class="rotater">
+		  <div class="btn btn-icon" style="background-image:url(resources/images/pages/loansmis.png); background-size: cover; background-position: center;">
+			  <a href="https://www.msa-apps.com/" target="_blank"><i class="fa fa-cube"></i></a>
+		  </div>
+	  </div>
+	  <div class="rotater">
+		  <div class="btn btn-icon" style="background-image:url(resources/images/pages/cc-icon_2.png); background-size: cover; background-position: center;">
+			  <a href="http://koyowe.github.io/catsystem" target="_blank"><i class="fa fa-cube"></i></a>
+		  </div>
+	  </div>
+  </div>
+  </div>
+</div>
+
+	<script type="text/javascript" async="" src="resources/ga.js.download"></script>
+	<script src="resources/jquery.min.js.download"></script> 
+	
+<script>
+$(document).ready(function() {
+  $(".trigger").click(function() {
+    $(".menu").toggleClass("active"); 
+  });
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body></html>
