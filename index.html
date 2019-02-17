@@ -281,17 +281,98 @@ background:hover {
 
 </style>
 
+<style type="text/css">
+body {
+  //align-items: center;
+  display: flex;
+  font-size: 18px;
+  height: 100vh;
+  //justify-content: center;
+  overflow: hidden;
+  position: relative;
+  //text-align: center;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+
+body:before {
+  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background: 
+              url(resources/images/pages/nakuru_site_visit.jpg) no-repeat bottom;
+  background-size: cover;
+  content: "";
+  opacity: 0;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  z-index: -1;
+}
+
+body:after {
+  background: #F9FCFF;
+  content: "";
+  height: 40rem;
+  //left: -5%;
+  position: absolute;
+    //right: -5%;
+    top: 90%;
+  transform-origin: 0 0;
+  transform: rotateZ(-4deg);
+  z-index: 0;
+}
+
+.body-title, .body-subtitle {
+  color: #fff;
+}
+
+.body-subtitle {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.body-button {
+  transform: translateZ(.1px);
+  position: relative;
+  z-index: 10;
+}
+
+/* Animations */
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+</style>
+
 
 <link rel="shortcut icon" href="resources/images/pages/koyowe_broker.png">
 
 </head>
 
-<body style="background-image:url(resources/images/pages/nakuru_site_visit.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+<body >
+<!-- <body style="background-image:url(resources/images/pages/nakuru_site_visit.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">-->
 	
 	
+	
+	
+	 
+	 
+  <section class="header-content">
 	<div style="padding:15px">
-		<img style="width:200px" src="resources/images/pages/ky_gold_trans.png">
+		<a href=""><img style="width:200px" src="resources/images/pages/ky_gold_trans.png"></a>
 	</div>
+	
+   
+  </section>
 	
 	
 <div >
