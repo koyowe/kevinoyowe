@@ -177,6 +177,7 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
   transform: translateX(-10em) rotate(22.5deg);
 }
 
+/*
 .rotater:nth-child(2) {
   -webkit-transform: rotate(22.5deg);
   -ms-transform: rotate(22.5deg);
@@ -187,6 +188,19 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
   -webkit-transform: translateX(-10em) rotate(-22.5deg);
   -ms-transform: translateX(-10em) rotate(-22.5deg);
   transform: translateX(-10em) rotate(-22.5deg);
+}
+*/
+
+.rotater:nth-child(2) {
+  -webkit-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-112.5deg);
+  -ms-transform: translateX(-10em) rotate(-112.5deg);
+  transform: translateX(-10em) rotate(-112.5deg);
 }
 
 .rotater:nth-child(3) {
@@ -201,6 +215,7 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
   transform: translateX(-10em) rotate(-67.5deg);
 }
 
+/*
 .rotater:nth-child(4) {
   -webkit-transform: rotate(112.5deg);
   -ms-transform: rotate(112.5deg);
@@ -212,7 +227,7 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
   -ms-transform: translateX(-10em) rotate(-112.5deg);
   transform: translateX(-10em) rotate(-112.5deg);
 }
-
+*/
 .rotater:nth-child(5) {
   -webkit-transform: rotate(157.5deg);
   -ms-transform: rotate(157.5deg);
