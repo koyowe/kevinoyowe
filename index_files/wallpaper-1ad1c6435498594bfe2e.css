@@ -1,0 +1,103 @@
+.wallpaper {
+  background: #17181a;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  .wallpaper--no-transition, .wallpaper--full-panel, .wallpaper--half-panel {
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+  .wallpaper--no-transition {
+    transform: none; }
+  .wallpaper--full-panel {
+    transform: translateX(-20%); }
+  .wallpaper--half-panel {
+    transform: none; }
+    @media (max-width: 79.9375em) {
+      .wallpaper--half-panel {
+        transform: translateX(-10%); } }
+    @media (max-width: 65.5625em) {
+      .wallpaper--half-panel {
+        transform: translateX(-20%); } }
+  .wallpaper--is-clickable {
+    cursor: pointer; }
+  .wallpaper__video {
+    bottom: 0;
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; }
+  .wallpaper__image {
+    background-attachment: fixed;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .wallpaper__html iframe {
+    background: transparent;
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: 1; }
+  .wallpaper__cover {
+    background: rgba(0, 0, 0, 0.01);
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 4; }
+  .wallpaper__title {
+    font-weight: 500;
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    bottom: 14px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.875em;
+    max-width: 123ch;
+    overflow: hidden;
+    position: absolute;
+    right: 14px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    white-space: nowrap;
+    z-index: 3; }
+    .fonts-loaded .wallpaper__title {
+      font-family: Fakt Pro Medium, "Fakt Pro Medium Cyr", "Fakt Pro Medium Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
+    @media (max-width: 30em) {
+      .wallpaper__title {
+        bottom: 14px;
+        font-size: 0.8125em;
+        right: 14px; } }
+  .wallpaper__content--appear, .wallpaper__content--enter {
+    opacity: 0.01; }
+  .wallpaper__content--appear-active, .wallpaper__content--enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease 500ms; }
+  .wallpaper__content--exit {
+    opacity: 1; }
+  .wallpaper__content--exit-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease; }
+
+
+/*# sourceMappingURL=wallpaper-1ad1c6435498594bfe2e.css.map*/

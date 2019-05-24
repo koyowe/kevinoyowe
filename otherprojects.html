@@ -75,23 +75,6 @@
 
 	<link rel="stylesheet" type="text/css" href="./index_files/wallpaper-1ad1c6435498594bfe2e.css"><script charset="utf-8" src="./index_files/wallpaper-087922dcf91dd437cf9e.js.download"></script>
 	
-	<script type="text/javascript" src="./index_files/jquery.min.js.download"></script>
-	<script type="text/javascript" src="./index_files/jquery-ui.min.js.download"></script>
-	
-	<script type="text/javascript">
-		$(document).ready(function() {
-			
-			if($(window).width() < 767){
-				
-				$("#profileDiv").css("left", "1em");
-		  
-			}else{
-				$("#profileDiv").css("left", "5em");
-			}
-		  
-        });
-	</script>
-	
 </head>
 
 
@@ -99,40 +82,49 @@
 
 	<div class="root-node">
 		<div class="app application">
-			<div id="profileDiv" class="transfer" route="[object Object]">
-				<div class="transfer__window uploader--progress">
-					<div class="transfer__contents">
-						<div class="spinner transfer__spinner spinner--rotate spinner--double" >
-							<svg height="170" width="170" class="" shape-rendering="geometricPrecision" viewBox="0 0 170 170" style="background-image:url(./index_files/koyowe.png); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius:50%"><!-- class="spinner__circle" -->
-								<circle class="spinner__background" r="80" cx="85" cy="85" fill="transparent" style="stroke-dasharray: 502.655; stroke-dashoffset: 0; stroke-width: 10; stroke: rgb(64, 159, 255);"></circle> <!-- rgb(232, 235, 237) -->
-								
-								<!--<circle class="spinner__foreground" r="80" cx="85" cy="85" fill="transparent" style="stroke-dasharray: 502.655; stroke-dashoffset: 90.4779; stroke-width: 10; stroke: rgb(64, 159, 255);">
-								</circle>-->
-							</svg>
+			
+			<div id="shortMessageForm" class="transfer" style="left:50%; height:288px; display:none">
+				<div class="uploader--progress">
+
+					<div class="">
+						<div style="text-align:right;padding-right:10px">
+							<span style="cursor:grab" onclick="closeShortMessage()"><b>x</b></span>
 						</div>
-
-						<h2>Kevin Oyowe</h2>
-
-						<p style="">CATSystem Programmer</p>
-
-						<p style="color:purple"><b>University of Kansas Medical Center</b></p>
+						<h2>Leave a short message</h2>
 						
-						<p>Kansas City, MO - United States</p>
-
+					</div>
+					
+					<div style="text-align:left; padding:15px">
+						<p style="color:grey">Sure, I would like to hear your thoughts. Please type in your message below. Thank you!</p>
+						
+						<form>
+							<textarea style="width:100%" rows="4"></textarea>
+						</form>
 					</div>
 				  
 					<div class="transfer__footer">
+						<button class="transfer__button transfer__button--alt" onclick="sendShortMessage()" style="background-color:#;color:">Send</button>
+					</div>
+				</div>
+			</div>
+			
+			<div id="shortMessageResponse" class="transfer" style="left:50%; height:211px; display:none">
+				<div class="uploader--progress">
+
+					<div class="">
+						<div style="text-align:right;padding-right:10px">
+							<span style="cursor:grab" onclick="closeShortMessageResponse()"><b>x</b></span>
+						</div>
+						<h2>Got it!</h2>
 						
-							<a href="https://facebook.com/kooyowe" style="text-decoration:none" target="blank_1">
-								<img src="./index_files/facebook_logo.png" height="100%">
-							</a>
-							<a href="https://twitter.com/oyowek" style="text-decoration:none" target="blank_2">
-								<img src="./index_files/twitter_logo.png" height="100%">
-							</a>
-							<a href="https://linkedin.com/in/koyowe" style="text-decoration:none" target="blank_3">
-								<img src="./index_files/linkedin_logo.jpg" height="100%">
-							</a>
-						
+					</div>
+					
+					<div style="text-align:left; padding:15px">
+						<p style="color:grey">Thank you Jim! That message is so important to me, I will get back to you as soon as I can.</p>
+					</div>
+				  
+					<div class="transfer__footer">
+						<button class="transfer__button transfer__button--alt" onclick="closeShortMessageResponse()" style="background-color:#;color:">Okay</button>
 					</div>
 				</div>
 			</div>
@@ -140,7 +132,7 @@
 			<div class="wallpaper wallpaper--no-transition">
 				<div class="">
 					<div class="wallpaper__html">
-						<<iframe allow="autoplay; camera" frameborder="1" scrolling="yes" src="./index_files/index.html" title="wallpaper-frame">
+						<<iframe allow="autoplay; camera" frameborder="1" scrolling="yes" src="./index_files/otherprojects.html" title="wallpaper-frame">
 							
 						</iframe>
 						
@@ -183,11 +175,5 @@
 		
 		function closeShortMessageResponse() {
 		  document.getElementById("shortMessageResponse").style.display = "none";
-		}
-		
-		function openFeedBack() {
-			//window.location.href = "./index_files/feedback.html";
-			var el = document.getElementById('feedback');
-			el.onclick();
 		}
 	</script>

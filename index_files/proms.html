@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Translations</title>
+    
+    <link href="./wallpaper-toolbox-2.2.2.css" rel="stylesheet">
+	<style>
+		.black,.wrapper{height:100%;position:absolute}.black,.copywrapper,.sizewrapper,.wrapper{position:absolute}.button,.headline{color:#fff;font-family:shutterstock-regular,sans-serif}@font-face{font-family:shutterstock-regular;src:url(assets/Frank-Regular-5bf1a86a3a.woff)}.black{width:100%;background-color:#000;opacity:.3}.wrapper{width:calc(100% - 360px);left:360px}.sizewrapper{width:20%;max-width:300px;min-width:180px;display:none}.copywrapper{left:5%;top:50%;-webkit-transform:translate(0,-48%);transform:translate(0,-48%)}.button,.headline,.logo{position:relative;left:0;opacity:0}.logo{width:34%;min-width:100px;display:block;-webkit-animation:logoin 1s forwards ease-in-out;animation:logoin 1s forwards ease-in-out}.headline{display:block;text-shadow:1px 1px 2px transparent;font-size:38px;line-height:1.2;margin-top:4%;-webkit-animation:logoin 1s .2s forwards ease-in-out;animation:logoin 1s .2s forwards ease-in-out}.button{display:inline-block;padding:2.8% 6% 2.4%;font-size:16px;line-height:normal;border-radius:1px;background-color:#d91e18;border:1px solid #d91e18;text-align:left;vertical-align:middle;outline:0;margin-top:3.8%;-webkit-animation:logoin 2s forwards ease-in-out;animation:logoin 2s forwards ease-in-out;-webkit-transition:background-color .3s ease-in-out;transition:background-color .3s ease-in-out}.button:hover{background-color:#4f5257;border-color:transparent}@-webkit-keyframes logoin{0%,60%{-webkit-transform:translate(0,30%);transform:translate(0,30%);opacity:0}100%{-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1}}@keyframes logoin{0%,60%{-webkit-transform:translate(0,30%);transform:translate(0,30%);opacity:0}100%{-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1}}
+	</style>
+
+	<style type="text/css"></style>
+
+</head>
+
+<body>
+
+    <we-wallpaper onready="onReady()" class="animated--fade-in">
+	
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('kenya-lion.pngx'), url('cat.pngx'); background-size: contain; background-position: center right;">
+		<source src="x.jpg" media="(min-width: 0)">
+	</we-background>
+        
+	<we-clickbutton></we-clickbutton>
+
+	<div class="wrapper" style="min-width:300px">
+		<div class="copywrapper">
+			<div class="headline" style="font-size: 31.9889px;" >
+				<we-lang key="copytext">Protocols Management System</we-lang>
+				<hr style="border-color:red">
+			</div>
+			
+			<div class="headline" style="font-size: 18px;" >
+				<p>
+					In the year 2015, I designed and developed the Protocols Management System for KEMRI-RCTP to manage the organization's Study Protocols creation and renewal processes. The system is still in use up to date.
+				</p> 
+				
+				<p>
+					<div class="button" style="font-size: 14px; padding:10px" onclick="javascript:history.back(-1);">
+						<a  style="text-decoration:none;color:white">Back</a>
+					</div>
+				</p>
+			</div>
+			
+		</div>
+	</div>
+	
+	</we-wallpaper>
+	
+	
+	
+	
+	
+    <script type="text/javascript">
+		"use strict";var locale={en:{copytext:"Software Developer",buttontext:"Download"},fr:{copytext:"Image vectorielle gratuite de la semaine",buttontext:"Téléchargez-la"},de:{copytext:"Kostenlose Vektorgrafik der Woche",buttontext:"Download"},nl:{copytext:"Gratis Vector van de Week",buttontext:"Downloaden"},it:{copytext:"Immagine vettoriale gratis della settimana",buttontext:"Scarica"},es:{copytext:"Vector Gratis de la Semana",buttontext:"Descargar"},pt:{copytext:"Vetor gratuito da semana",buttontext:"Baixar"}};
+		
+		function onReady(){}
+		
+		function onBackgroundLoad(){if(wallpaper.fadeIn(),textScale(".logo","width",.6),textScale(".headline","width",.159),textScale(".button","width",.08),"Explorer"===WT.browser.currentBrowser.identity||"Edge"===WT.browser.currentBrowser.identity){var t=$(".logo").attr("src").replace("svg","png");$(".logo").attr("src",t)}}
+		
+		function textScale(t,e,o){var a=$(t);
+		
+		function i(){if("width"==e){var t=$(".sizewrapper").width();a.is("div")&&a.css({"font-size":t*o+"px"}),(a.is("img")||a.is("svg"))&&a.css({width:t*o+"px"})}else if("height"==e){t=$(".sizewrapper").height();a.is("div")&&a.css({"font-size":t*o+"px"}),(a.is("img")||a.is("svg"))&&a.css({width:t*o+"px"})}}i(),$(window).resize(i)}
+	</script>
+	
+	<script type="text/javascript">
+		function openCatSystem() {
+			window.location.href = "../catsystem.html";
+		}
+	</script>
+	
+    <script src="./jquery.min.js.download" type="text/javascript"></script>
+    <script src="./concorde-browser.min.js.download"></script>
+
+</body>
+</html>
