@@ -83,12 +83,16 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			
-			if($(window).width() < 767){
+			if($(window).width() < 768){
 				
 				$("#profileDiv").css("left", "1em");
+				
+				$("#viewportfolio").css("display", "block");
 		  
 			}else{
 				$("#profileDiv").css("left", "5em");
+				
+				$("#viewportfolio").css("display", "none");
 			}
 		  
         });
@@ -120,6 +124,14 @@
 						<p style="color:purple"><b>University of Kansas Medical Center</b></p>
 						
 						<p>Kansas City, MO - United States</p>
+						
+						<div id="viewportfolio" onclick="hideProfileDiv()" style="text-align:center; padding:4px; display:none">
+							<p>
+								<span style="border:1px solid pink; padding:4px; border-radius:5px; cursor:pointer; color:white;background-color:rgb(64, 159, 255)">
+									View Portfolio
+								</span>
+							</p>
+						</div>
 
 					</div>
 				  
@@ -139,10 +151,10 @@
 				</div>
 			</div>
 			
-			<div class="wallpaper wallpaper--no-transition">
-				<div class="">
-					<div class="wallpaper__html">
-						<<iframe allow="autoplay; camera" frameborder="1" scrolling="yes" src="./index_files/index.html" title="wallpaper-frame">
+			<div class="wallpaper wallpaper--no-transition" style="">
+				<div class="" style="">
+					<div class="wallpaper__html" style="">
+						<iframe allow="autoplay; camera" frameborder="1" scrolling="yes" src="./index_files/index.html" title="wallpaper-frame" style="">
 							
 						</iframe>
 						
@@ -191,5 +203,9 @@
 			//window.location.href = "./index_files/feedback.html";
 			var el = document.getElementById('feedback');
 			el.onclick();
+		}
+		
+		function hideProfileDiv() {
+			$("#profileDiv").css("display", "none");
 		}
 	</script>

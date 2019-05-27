@@ -17,12 +17,31 @@
 	</style>
 
 	<style type="text/css"></style>
+	
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.download"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			if($(window).width() < 768){
+				
+				$("#wrapperDiv").css("left", "0");
+				$("#projectIcon").css("display", "none");
+		  
+			}else{
+				
+				$("#wrapperDiv").css("left", "360px");
+			}
+		  
+        });
+	</script>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
 	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('scientist.png'); background-size:70%; background-position: center right; opacity: 0.5;">
 		<source src="x.jpg" media="(min-width: 0)">
@@ -30,17 +49,21 @@
         
 	<we-clickbutton></we-clickbutton>
 
-	<div class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
+		<div class="copywrapper" style="padding-top:25em">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext"><img src="proms.png" width="60px" style="border:1px solid pink; border-radius:50%"> Protocols Management System</we-lang>
+				<we-lang key="copytext"><img id="projectIcon" src="proms.png" width="60px" style="border:1px solid pink; border-radius:50%"> Protocols Management System</we-lang>
 				<hr style="border-color:red">
 			</div>
 			
 			<div class="headline" style="font-size: 18px;" >
 				<p>
-					In the year 2015, I Designed and Developed the Protocols Management System to help in the management of KEMRI-RCTP Study Protocols. The system has functionalities that enables the organization to keep track of study protocols application and renewal processes. It includes an automated Email Reminder that sends alert emails to Principal Investigators whose protocols are about to expire which has helped the organization realize 100% zero delays in the protocol renewal and submission processes.
+					In the year 2015, I Designed and Developed the Protocols Management System to help in the management of KEMRI-RCTP Study Protocols.
 				</p> 
+				<br>
+				<p>
+					The system has functionalities that enables the organization to keep track of study protocols application and renewal processes. It includes an automated Email Reminder that sends alert emails to Principal Investigators whose protocols are about to expire which has helped the organization realize 100% zero delays in the protocol renewal and submission processes.
+				</p>
 				
 				<p>
 					<div class="button" style="font-size: 14px; padding:10px" onclick="javascript:history.back(-1);">

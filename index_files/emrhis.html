@@ -17,28 +17,47 @@
 	</style>
 
 	<style type="text/css"></style>
+	
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.download"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			if($(window).width() < 768){
+				
+				$("#wrapperDiv").css("left", "0");
+				$("#projectIcon").css("display", "none");
+		  
+			}else{
+				
+				$("#wrapperDiv").css("left", "360px");
+			}
+		  
+        });
+	</script>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('emr.png'); background-size: contain; background-position: bottom right; opacity:0.5; background-size:60%">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('emr.png'); background-size: contain; background-position: bottom right; opacity:0.5; background-size:60%;">
 	</we-background>
         
 	<we-clickbutton></we-clickbutton>
 
-	<div class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
+		<div class="copywrapper" style="padding-top:25em">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext"><img src="omrs-button.png" style="border:1px solid white; border-radius:50%"> Electronic Medical Records and HIS Career</we-lang>
+				<we-lang key="copytext"><img id="projectIcon" src="omrs-button.png" style="border:1px solid white; border-radius:50%"> Electronic Medical Records and HIS Career</we-lang>
 				<hr style="border-color:red">
 			</div>
 			
 			<div class="headline" style="font-size: 18px;" >
 				<p>
-					<u><b>2019-Date</b></u>: CATSystem Programmer - Cancer Tracking System at the University of Kansas Medical Centre.
+				<u><b>2019-Date</b></u>: CATSystem Programmer - Cancer Tracking System at the University of Kansas Medical Centre.
 				</p> 
 				<br>
 				<p>
@@ -56,7 +75,6 @@
 				<p>
 					<u><b>2014</b></u>: Intern IT, KEMRI-RCTP FACES Program.
 				</p> 
-				
 				<p>
 					<div class="button" style="font-size: 14px; padding:10px" onclick="javascript:history.back(-1);">
 						<a  style="text-decoration:none;color:white">Back</a>

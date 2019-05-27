@@ -17,12 +17,31 @@
 	</style>
 
 	<style type="text/css"></style>
+	
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.download"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			if($(window).width() < 768){
+				
+				$("#wrapperDiv").css("left", "0");
+				$("#projectIcon").css("display", "none");
+		  
+			}else{
+				
+				$("#wrapperDiv").css("left", "360px");
+			}
+		  
+        });
+	</script>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
 	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('kenya-lion.pngx'), url('cat.pngx'); background-size: contain; background-position: center right;">
 		<source src="x.jpg" media="(min-width: 0)">
@@ -30,8 +49,8 @@
         
 	<we-clickbutton></we-clickbutton>
 
-	<div class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
+		<div class="copywrapper" style="padding-top:10em">
 			<div class="headline" style="font-size: 31.9889px;" >
 				<we-lang key="copytext">Donate just $1 dollar</we-lang>
 				<hr style="border-color:purple">
@@ -39,12 +58,12 @@
 			
 			<div class="headline" style="font-size: 18px;" >
 				<p>
-					I am forever grateful to God for all the little bits of love and support I received from family, friends and well-wishers towards my education since I grew up without parents.
+					Dear Friend,<br>
+					I know there are a lot of drives asking for your support right now. I just wanted to make sure you know about one that's absolutely critical to the future of our society.
 				</p> 
 				<br>
-	
 				<p>
-					This page is not yet fully setup to donate from, however you can let me know through a short message that you are willing to donate and I will give you the details.
+					It's called Next On Line, and it's led by me fighting to end poverty and lack of education in Kenya. It's an effort I decided to persue after witnessing first-hand, how the power of well-wishers can have a great impact on the education, growth, and development of a village boy from Nyakach in Kisumu County, Kenya. This work is a top priority for me.
 				</p> 
 				
 				<p>

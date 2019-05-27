@@ -17,34 +17,54 @@
 	</style>
 
 	<style type="text/css"></style>
+	
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.download"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			if($(window).width() < 768){
+				
+				$("#wrapperDiv").css("left", "0");
+				$("#projectIcon").css("display", "none");
+		  
+			}else{
+				
+				$("#wrapperDiv").css("left", "360px");
+			}
+		  
+        });
+	</script>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
 	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('lymph-system-diagram.png'); background-size: contain; background-position: center right; opacity:0.5">
 	</we-background>
         
 	<we-clickbutton></we-clickbutton>
 
-	<div class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
+		<div class="copywrapper" style="padding-top:25em">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext"><img src="cc-icon-trans.png" width="60px" style="border-radius:50%;"> Cancer Tracking System</we-lang>
+				<we-lang key="copytext"><img id="projectIcon" src="cc-icon-trans.png" width="60px" style="border-radius:50%;"> Cancer Tracking System</we-lang>
 				<hr style="border-color:red">
 			</div>
 			
 			<div class="headline" style="font-size: 18px;" >
-				<p>
-					CATSystem is a collaboration between Kenya Medical Research Institute (KEMRI), Global Health Innovation (GHI) and the University of Kansas Medical Center (KUMC). I am currently working on this project together with a strong team of medical researchers from United States and Kenya with an aim to produce a robust clinical management tool that will strengthen Cervical Cancer Screening and Treatment processes in Kenya and the rest of Africa.
-				</p> 
-				<br>
-				<p>
-					View our progress at <a target="blank_4" href="https://koyowe.github.io/catsystem" style="text-decoration:none">http://koyowe.github.io/catsystem</a>
-				</p>
-				
+				<div style="">
+					<p>
+						CATSystem is a collaboration between Kenya Medical Research Institute (KEMRI), Global Health Innovation Fund (GHI) and the University of Kansas Medical Center (KUMC). I am currently working on this project together with a team of medical researchers from the United States and Kenya with an aim to produce a robust clinical management tool that will strengthen Cervical Cancer Screening and Treatment procedures and processes in Kenya and the rest of Africa.
+					</p> 
+					<br>
+					<p>
+						View our progress at <a target="blank_4" href="https://koyowe.github.io/catsystem" style="text-decoration:none">http://koyowe.github.io/catsystem</a>
+					</p>
+				</div>
 				<p>
 					<div class="button" style="font-size: 14px; padding:10px" onclick="javascript:history.back(-1);">
 						<a  style="text-decoration:none;color:white">Back</a>

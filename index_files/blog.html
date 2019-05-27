@@ -17,12 +17,31 @@
 	</style>
 
 	<style type="text/css"></style>
+	
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.download"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			if($(window).width() < 768){
+				
+				$("#wrapperDiv").css("left", "0");
+				$("#projectIcon").css("display", "none");
+		  
+			}else{
+				
+				$("#wrapperDiv").css("left", "360px");
+			}
+		  
+        });
+	</script>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
 	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('kenya-lion.pngx'), url('cat.pngx'); background-size: contain; background-position: center right;">
 		<source src="x.jpg" media="(min-width: 0)">
@@ -30,8 +49,8 @@
         
 	<we-clickbutton></we-clickbutton>
 
-	<div class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
+		<div class="copywrapper" style="padding-top:10em">
 			<div class="headline" style="font-size: 31.9889px;" >
 				<we-lang key="copytext">Blog</we-lang>
 				<hr style="border-color:red">
@@ -39,7 +58,7 @@
 			
 			<div class="headline" style="font-size: 18px;" >
 				<p>
-					I share my experiences in the fields of Health Informatics and Technology on my blog. I also send a monthly newsletter on email about the latest developments in Kenya's Health Information Systems. If you would like to receive these newsletters, you can visit the blog at <a href="" target="blank">https://koyowe.github.io/blog/</a> and add your email address.
+					I will be sharing my experiences in the fields of Health Informatics and Technology on my blog that I will launch soon. You will also get a chance to receive my free monthly newsletter about the latest developments in Kenya's Health Information Systems by adding your email address. Stay stuned. 
 				</p> 
 				
 				<p>

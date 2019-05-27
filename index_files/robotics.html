@@ -17,12 +17,31 @@
 	</style>
 
 	<style type="text/css"></style>
+	
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.download"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			if($(window).width() < 768){
+				
+				$("#wrapperDiv").css("left", "0");
+				$("#projectIcon").css("display", "none");
+		  
+			}else{
+				
+				$("#wrapperDiv").css("left", "360px");
+			}
+		  
+        });
+	</script>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
 	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('robot_png.png'); background-size:30%; background-position: center right; opacity: 0.5;">
 		<source src="x.jpg" media="(min-width: 0)">
@@ -30,10 +49,10 @@
         
 	<we-clickbutton></we-clickbutton>
 
-	<div class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
+		<div class="copywrapper" style="padding-top:15em">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext"><img src="robot.png" width="60px" style="border-radius:50%; border:1px solid white"> Robotics</we-lang>
+				<we-lang key="copytext"><img id="projectIcon" src="robot.png" width="60px" style="border-radius:50%; border:1px solid white"> Robotics</we-lang>
 				<hr style="border-color:red">
 			</div>
 			
