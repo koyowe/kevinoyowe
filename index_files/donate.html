@@ -27,11 +27,13 @@
 			if($(window).width() < 768){
 				
 				$("#wrapperDiv").css("left", "0");
+				$("#copywrapperDiv").css("padding-top", "175em");
 				$("#projectIcon").css("display", "none");
 		  
 			}else{
 				
 				$("#wrapperDiv").css("left", "360px");
+				$("#copywrapperDiv").css("padding-top", "65em");
 			}
 		  
         });
@@ -41,7 +43,7 @@
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll; background-color:black">
 	
 	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('kenya-lion.pngx'), url('cat.pngx'); background-size: contain; background-position: center right;">
 		<source src="x.jpg" media="(min-width: 0)">
@@ -50,29 +52,69 @@
 	<we-clickbutton></we-clickbutton>
 
 	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
-		<div class="copywrapper" style="padding-top:10em">
+		<div id="copywrapperDiv" class="copywrapper">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext">Donate just $1 dollar</we-lang>
+				<we-lang key="copytext">Donate $</we-lang>
 				<hr style="border-color:purple">
 			</div>
 			
-			<div class="headline" style="font-size: 18px;" >
+			<div class="headline" style="font-size: 16px; color:#222; background-color:white; padding:2em;" >
 				<p>
-					Dear Friend,<br>
+					Dear Friend,<br><br>
 					I know there are a lot of drives asking for your support right now. I just wanted to make sure you know about one that's absolutely critical to the future of our society.
 				</p> 
 				<br>
 				<p>
-					It's called Next On Line, and it's led by me fighting to end poverty and lack of education in Kenya. It's an effort I decided to persue after witnessing first-hand, how the power of well-wishers can have a great impact on the education, growth, and development of a village boy from Nyakach in Kisumu County, Kenya. This work is a top priority for me.
+					It's called Next On Line, and it's led by me fighting to end poverty and lack of education in our society. It's an effort I decided to persue after witnessing first-hand, how the power of well-wishers had a great impact on my own education, growth, and personal development from a poor village boy with no parents to who I am today.
 				</p> 
-				
 				<br>
-				
 				<p>
-					I hope you'll join me. Contribute to Next On Line today and be a part of the team that is wrestling to make our society bright, fair, and adequately empowered to face the future
-
+					I understand very well what it means to survive below the poverty line and that's why this work is a top priority for me.
 				</p>
-				
+				<br>
+				<p style="padding:0 2em 0 2em; color:black">
+					<b>"In a second, I'm going to ask you to <b><a style="text-decoration:underline; color:#15c; font-weight: bold;" href="https://nextonline.org" target="blank">chip in to support Next On Line</a></b> -- but first, I wanted to tell you why I believe so deeply in this innitiative and the lives we are fighting to make better every day."</b>
+				</p>
+				<br>
+				<p>
+					It's because of the ordinary people joining hands to drive forward this innitiative -- because they believe that with enough effort and enough passion, we can change lives for the better.
+				</p>
+				<br>
+				<p>
+					The strides I've made in life, however small, are a source of encouragement and inspiration to many and I thank the Almighty for that. The team is growing fast, dear friend, and am trying to do everything I can the right way. Next On Line is empowering local youths to become tech experts and entrepreneurs, offering free top-notch training, and helping students make a difference in their studies.
+				</p>
+				<br>
+				<p style="padding:0 2em 0 2em; color:black">
+					"I hope you'll join us. Contribute to Next On Line today and be a part of the team that is wrestling to make our society bright, fair, and adequately empowered to face the future."
+				</p>
+				<br>
+				<p>
+					This work is so important to me, dear friend.
+				</p>
+				<br>
+				<p>
+					Over my short lifespan, I've seen firsthand how poverty and lack of proper education plays a role in blocking progress for majority of youths. Our leaders have not been able to do much either, some youths have lost the battle, while millions more hang on to false hopes of a better tomorrow.
+				</p>
+				<br>
+				<p>
+					Many attempts by young innovators and entrepreneurs have been hurt or hindered by poverty and lack of proper knowledge and experience.
+				</p>
+				<br>
+				<p>
+					But with Next on Line leading the way, we can change things. We can make sure we build a knowledgeable society with proper technological advances that works for everybody.
+				</p>
+				<br>
+				<p style="padding:0 2em 0 2em; color:black">
+					"This is your chance to get involved in laying the foundations of a big movement. Chip in today to support this critical work."
+				</p>
+				<br>
+				<p>
+					Thank you,
+				</p>
+				<br>
+				<p>
+					Kevin Oyowe
+				</p>
 				<p>
 					<div class="button" style="font-size: 14px; padding:10px; background-color:purple" onclick="javascript:history.back(-1);">
 						<a  style="text-decoration:none;color:white">Back</a>

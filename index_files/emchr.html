@@ -27,6 +27,7 @@
 			if($(window).width() < 768){
 				
 				$("#wrapperDiv").css("left", "0");
+				$("#copywrapperDiv").css("padding-top", "45em");
 				$("#projectIcon").css("display", "none");
 		  
 			}else{
@@ -50,7 +51,7 @@
 	<we-clickbutton></we-clickbutton>
 
 	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
-		<div class="copywrapper" style="padding-top:45em">
+		<div id="copywrapperDiv" class="copywrapper">
 			<div class="headline" style="font-size: 31.9889px;" >
 				<we-lang key="copytext"><img id="projectIcon" src="emchr.jpg" width="60px" style="border-radius:50%"> Electronic Maternal Child Health Records </we-lang>
 				<hr style="border-color:red">

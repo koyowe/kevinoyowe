@@ -86,7 +86,8 @@
 			if($(window).width() < 768){
 				
 				$("#profileDiv").css("left", "1em");
-				
+				$("#profileDiv").css("right", "1em");
+				$("#profileDiv").css("width", "92%");
 				$("#viewportfolio").css("display", "block");
 		  
 			}else{
@@ -97,17 +98,23 @@
 		  
         });
 	</script>
+	<style>
+		.nav.nav--loaded {
+			//background-color:red;
+			//right:4.0em;
+		}
+	</style>
 	
 </head>
 
 
 <body>
-
-	<div class="root-node">
-		<div class="app application">
-			<div id="profileDiv" class="transfer" route="[object Object]">
+	
+	<div class="root-node" >
+		<div class="app application" style="max-height:100%;overflow-y:scroll; background-color:black;">
+			<div id="profileDiv" class="transfer" route="[object Object]" style="height:27.625em; top:50%;">
 				<div class="transfer__window uploader--progress">
-					<div class="transfer__contents">
+					<div class="transfer__contents" style="height:23.125em">
 						<div class="spinner transfer__spinner spinner--rotate spinner--double" >
 							<svg height="170" width="170" class="" shape-rendering="geometricPrecision" viewBox="0 0 170 170" style="background-image:url(./index_files/koyowe.png); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius:50%"><!-- class="spinner__circle" -->
 								<circle class="spinner__background" r="80" cx="85" cy="85" fill="transparent" style="stroke-dasharray: 502.655; stroke-dashoffset: 0; stroke-width: 10; stroke: rgb(64, 159, 255);"></circle> <!-- rgb(232, 235, 237) -->
@@ -125,9 +132,11 @@
 						
 						<p>Kansas City, MO - United States</p>
 						
+						<div style="height:1.0em"></div>
+						
 						<div id="viewportfolio" onclick="hideProfileDiv()" style="text-align:center; padding:4px; display:none">
 							<p>
-								<span style="border:1px solid pink; padding:4px; border-radius:5px; cursor:pointer; color:white;background-color:rgb(64, 159, 255)">
+								<span style="border:1px solid pink; padding:1.25em; border-radius:5px; cursor:pointer; color:white;background-color:rgb(64, 159, 255)">
 									View Portfolio
 								</span>
 							</p>
@@ -135,7 +144,7 @@
 
 					</div>
 				  
-					<div class="transfer__footer">
+					<div class="transfer__footer" style="text-align:center">
 						
 							<a href="https://facebook.com/kooyowe" style="text-decoration:none" target="blank_1">
 								<img src="./index_files/facebook_logo.png" height="100%">
@@ -162,17 +171,17 @@
 				</div>
 			</div>
 		  
-			<nav class="nav nav--loaded">
+			<nav id="navDiv" class="nav nav--loaded">
 				<ul class="nav__items">
 					<li class="nav__item">
 						<a href="" class="nav__label">Home</a>
 					</li>
 					
 					<li class="nav__item">
-						<a href="https://wetransfer.com/about" class="nav__label">Profile</a>
+						<a href="" class="nav__label">Profile</a>
 					</li>
 					<li class="nav__item">
-						<a href="https://wetransfer.com/sign-in" class="nav__label">Donate</a>
+						<a href="" class="nav__label">Donate</a>
 					</li>
 				</ul>
 			</nav>
