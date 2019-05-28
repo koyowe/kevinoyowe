@@ -14,13 +14,13 @@
 	<meta name="referrer" content="origin">
 
   
-	<meta property="og:description" content="Kevin Oyowe is a Kenyan programmer based in the US">
+	<meta property="og:description" content="Kevin Oyowe is a Kenyan computer programmer and health information systems developer. He is the CATSystem programmer for the Cancer Tracking System project at the University of Kansas Medical Center in Kansas City, United States">
 	<meta property="og:title" content="Kevin Oyowe">
 	<meta property="og:image" content="">
 	<meta property="og:type" content="website">
 	<meta property="fb:app_id" content="">
 
-	<meta name="description" content="Kevin Oyowe is an experienced Software Developer from Kenya with International experience.">
+	<meta name="description" content="Kevin Oyowe is a Kenyan computer programmer and health information systems developer. He is the CATSystem programmer for the Cancer Tracking System project at the University of Kansas Medical Center in Kansas City, United States">
 
 	<meta name="author" content="Kevin Oyowe">
 
@@ -130,7 +130,7 @@
 
 						<p style="color:purple"><b>University of Kansas Medical Center</b></p>
 						
-						<p>Kansas City, MO - United States</p>
+						<p>Kansas City, United States</p>
 						
 						<div style="height:1.0em"></div>
 						
@@ -163,7 +163,7 @@
 			<div class="wallpaper wallpaper--no-transition" style="">
 				<div class="" style="">
 					<div class="wallpaper__html" style="">
-						<iframe allow="autoplay; camera" frameborder="1" scrolling="yes" src="./index_files/index.html" title="wallpaper-frame" style="">
+						<iframe id="iFrame" allow="autoplay; camera" frameborder="1" scrolling="yes" src="./index_files/index.html" title="wallpaper-frame" style="">
 							
 						</iframe>
 						
@@ -174,14 +174,14 @@
 			<nav id="navDiv" class="nav nav--loaded">
 				<ul class="nav__items">
 					<li class="nav__item">
-						<a href="" class="nav__label">Home</a>
+						<a class="nav__label" onclick="openIndex()">Home</a>
 					</li>
 					
 					<li class="nav__item">
-						<a href="" class="nav__label">Profile</a>
+						<a class="nav__label" onclick="openEMRHIS()">Profile</a>
 					</li>
 					<li class="nav__item">
-						<a href="" class="nav__label">Donate</a>
+						<a class="nav__label" onclick="openDonate()">Donate</a>
 					</li>
 				</ul>
 			</nav>
@@ -191,27 +191,20 @@
   </div>
 
 	<script type="text/javascript">
-		function openShortMessage() {
-			document.getElementById("shortMessageForm").style.display = "block";
-		}
-
-		function closeShortMessage() {
-		  document.getElementById("shortMessageForm").style.display = "none";
+		function openIndex() {
+			window.location.href = "./";
 		}
 		
-		function sendShortMessage() {
-		  document.getElementById("shortMessageForm").style.display = "none";
-		   document.getElementById("shortMessageResponse").style.display = "block";
+		function openDonate() {
+			
+			document.getElementById('iFrame').src = "donate.html";
+			hideProfileDiv();
 		}
 		
-		function closeShortMessageResponse() {
-		  document.getElementById("shortMessageResponse").style.display = "none";
-		}
-		
-		function openFeedBack() {
-			//window.location.href = "./index_files/feedback.html";
-			var el = document.getElementById('feedback');
-			el.onclick();
+		function openEMRHIS() {
+			
+			document.getElementById('iFrame').src = "emrhis.html";
+			hideProfileDiv();
 		}
 		
 		function hideProfileDiv() {

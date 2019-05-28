@@ -29,11 +29,13 @@
 				$("#wrapperDiv").css("left", "0");
 				$("#copywrapperDiv").css("padding-top", "195em");
 				$("#projectIcon").css("display", "none");
+				$("#donateRightAway").css("font-size", "14px");
 		  
 			}else{
 				
 				$("#wrapperDiv").css("left", "360px");
 				$("#copywrapperDiv").css("padding-top", "65em");
+				$("#donateRightAway").css("font-size", "22px");
 			}
 		  
         });
@@ -54,7 +56,12 @@
 	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
 		<div id="copywrapperDiv" class="copywrapper">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext">Donate $</we-lang>
+				<we-lang key="copytext">
+					Donate $
+					<span id="donateRightAway" style="background-color:#1f2b39;color:white;padding:0.5em; border-radius:5px" onclick="openDonateForm()">
+						Donate Right Away
+					<span>
+				</we-lang>
 				<hr style="border-color:pink">
 			</div>
 			
@@ -81,7 +88,7 @@
 				</p>
 				<br>
 				<p>
-					The strides I've made in life, however small, are a source of encouragement and inspiration to many and I thank the Almighty for that. 
+					The strides I've made in life are small, but they are a source of encouragement and inspiration to many and I thank the Almighty for that. 
 				</p>
 				<br>
 				<p>
@@ -92,7 +99,7 @@
 					"I hope you'll join us. Contribute to Next On Line today and be a part of the team that is wrestling to make our society bright, fair, and adequately empowered to face the future."
 					<div style="height:1.5em"></div>
 					<div style="text-align:center">
-						<span style="background-color:#1f2b39;color:white;padding:0.5em; font-size:22px" onclick="openDonateForm()">
+						<span style="background-color:#1f2b39;color:white;padding:0.5em; font-size:22px; border-radius:5px" onclick="openDonateForm()">
 							Donate
 						<span>
 					</div>
@@ -119,7 +126,7 @@
 					
 					<div style="height:1.5em"></div>
 					<div style="text-align:center">
-						<span style="background-color:#1f2b39;color:white;padding:0.5em; font-size:22px" onclick="openDonateForm()">
+						<span style="background-color:#1f2b39;color:white;padding:0.5em; font-size:22px; border-radius:5px" onclick="openDonateForm()">
 							Donate
 						<span>
 					</div>
