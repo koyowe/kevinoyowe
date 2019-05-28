@@ -27,7 +27,7 @@
 			if($(window).width() < 768){
 				
 				$("#wrapperDiv").css("left", "0");
-				$("#copywrapperDiv").css("padding-top", "175em");
+				$("#copywrapperDiv").css("padding-top", "195em");
 				$("#projectIcon").css("display", "none");
 		  
 			}else{
@@ -60,12 +60,12 @@
 			
 			<div class="headline" style="font-size: 16px; color:#222; background-color:white; padding:2em;" >
 				<p>
-					My Friend --<br><br>
+					Dear Friend --<br><br>
 					I know there are a lot of drives asking for your support right now. I just wanted to make sure you know about one that's absolutely critical to the future of our society.
 				</p> 
 				<br>
 				<p>
-					It's called Next On Line, and it's led by myself fighting to end poverty and lack of education in our society. It's an effort I decided to pursue after witnessing firsthand, how the power of well-wishers had a great impact on my own education, growth, and personal development from a poor village boy with no parents to who I am today.
+					It's called Next On Line, and it's led by myself fighting to end poverty and lack of education in our society. It's an effort I decided to pursue after witnessing firsthand, how the power of well-wishers had a great impact on my own education, growth, and personal development from a vulnerable village boy with no parents to who I am today.
 				</p> 
 				<br>
 				<p>
@@ -73,7 +73,7 @@
 				</p>
 				<br>
 				<p style="padding:0 2em 0 2em; color:black">
-					<b>"In a second, I'm going to ask you to <b><a style="text-decoration:underline; color:#15c; font-weight: bold;" href="https://nextonline.org" target="blank">chip in to support Next On Line</a></b> -- but first, I wanted to tell you why I believe so deeply in this initiative and the lives we are fighting to make better every day."</b>
+					<b>"In a second, I'm going to ask you to <b><a id="donate_form" onclick="openDonateForm()" style="text-decoration:underline; color:#15c; font-weight: bold;">chip in to support Next On Line</a></b> -- but first, I wanted to tell you why I believe so deeply in this initiative and the lives we are fighting to make better every day."</b>
 				</p>
 				<br>
 				<p>
@@ -90,6 +90,12 @@
 				<br>
 				<p style="padding:0 2em 0 2em; color:black">
 					"I hope you'll join us. Contribute to Next On Line today and be a part of the team that is wrestling to make our society bright, fair, and adequately empowered to face the future."
+					<div style="height:1.5em"></div>
+					<div style="text-align:center">
+						<span style="background-color:#1f2b39;color:white;padding:0.5em; font-size:22px" onclick="openDonateForm()">
+							Donate
+						<span>
+					</div>
 				</p>
 				<br>
 				<p>
@@ -110,6 +116,13 @@
 				<br>
 				<p style="padding:0 2em 0 2em; color:black">
 					"This is your chance to get involved in laying the foundations of a big movement. Chip in today to support this critical work."
+					
+					<div style="height:1.5em"></div>
+					<div style="text-align:center">
+						<span style="background-color:#1f2b39;color:white;padding:0.5em; font-size:22px" onclick="openDonateForm()">
+							Donate
+						<span>
+					</div>
 				</p>
 				<br>
 				<p>
@@ -149,8 +162,8 @@
 	</script>
 	
 	<script type="text/javascript">
-		function openCatSystem() {
-			window.location.href = "../catsystem.html";
+		function openDonateForm() {
+			window.location.href = "../donate_form.html";
 		}
 	</script>
 	
