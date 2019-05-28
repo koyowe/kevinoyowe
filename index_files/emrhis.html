@@ -29,10 +29,14 @@
 				$("#wrapperDiv").css("left", "0");
 				$("#copywrapperDiv").css("padding-top", "25em");
 				$("#projectIcon").css("display", "none");
+				$("#background").css("background-position", "top right");
+				$("#background").css("background-size", "contain");
 		  
 			}else{
 				
 				$("#wrapperDiv").css("left", "360px");
+				$("#background").css("background-position", "bottom right");
+				$("#background").css("background-size", "60%");
 			}
 		  
         });
@@ -44,7 +48,7 @@
 
     <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('emr.png'); background-size: contain; background-position: bottom right; opacity:0.5; background-size:60%;">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('emr.png'); opacity:0.5;">
 	</we-background>
         
 	<we-clickbutton></we-clickbutton>

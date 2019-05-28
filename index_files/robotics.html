@@ -27,12 +27,16 @@
 			if($(window).width() < 768){
 				
 				$("#wrapperDiv").css("left", "0");
-				$("#copywrapperDiv").css("padding-top", "15em");
+				$("#copywrapperDiv").css("padding-top", "25em");
 				$("#projectIcon").css("display", "none");
+				$("#background").css("background-position", "top right");
+				$("#background").css("background-size", "contain");
 		  
 			}else{
 				
 				$("#wrapperDiv").css("left", "360px");
+				$("#background").css("background-position", "center right");
+				$("#background").css("background-size", "contain");
 			}
 		  
         });
@@ -44,7 +48,7 @@
 
     <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('robot_png.png'); background-size:30%; background-position: center right; opacity: 0.5;">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('robotk.jpg'); background-size:contain; background-position: center right; opacity: 0.4;">
 		<source src="x.jpg" media="(min-width: 0)">
 	</we-background>
         
@@ -63,7 +67,7 @@
 				</p> 
 				<br>
 				<p>
-					Each year, I join the Robotics Kenya (Roboken) particpants during the National Science Week to participate in the East African Robotics Championships. It's usually a period of learning and getting to know about what's new in the fields of Electrical, Mechanical, Automotive, and Software Engineerings.
+					Each year, I join the Robotics Kenya (Roboken) participants during the National Science Week to participate in the East African Robotics Championships. It's usually a period of learning and getting to know about what's new in the fields of Electrical, Mechanical, Automotive, and Software Engineerings.
 				</p> 
 				<br>
 				<p>

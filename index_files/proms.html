@@ -27,12 +27,16 @@
 			if($(window).width() < 768){
 				
 				$("#wrapperDiv").css("left", "0");
-				$("#copywrapperDiv").css("padding-top", "25em");
+				$("#copywrapperDiv").css("padding-top", "35em");
 				$("#projectIcon").css("display", "none");
+				$("#background").css("background-position", "top right");
+				$("#background").css("background-size", "contain");
 		  
 			}else{
 				
 				$("#wrapperDiv").css("left", "360px");
+				$("#background").css("background-position", "center right");
+				$("#background").css("background-size", "70%");
 			}
 		  
         });

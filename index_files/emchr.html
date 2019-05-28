@@ -29,10 +29,14 @@
 				$("#wrapperDiv").css("left", "0");
 				$("#copywrapperDiv").css("padding-top", "45em");
 				$("#projectIcon").css("display", "none");
+				$("#background").css("background-position", "center right, top right");
+				$("#background").css("background-size", "70%, 70%");
 		  
 			}else{
 				
 				$("#wrapperDiv").css("left", "360px");
+				$("#background").css("background-position", "bottom right, center right");
+				$("#background").css("background-size", "30%");
 			}
 		  
         });
@@ -44,7 +48,7 @@
 
     <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('forhitsystem.png'), url('baby_boss.png'); background-size: 30%; background-position: bottom right, center right; opacity: 0.5;">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('forhitsystem.png'), url('baby_boss.png'); opacity: 0.5;">
 		<source src="x.jpg" media="(min-width: 0)">
 	</we-background>
         
