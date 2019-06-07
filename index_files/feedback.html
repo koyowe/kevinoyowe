@@ -51,7 +51,7 @@
         }
         
         #loading-div {
-		  background-color:pink; 
+		  background-color:grey; 
 		  border-radius:5px;
           position: fixed;
           top: 50%;
@@ -69,8 +69,8 @@
 </head>
 
 <body>
-	<div id="loading-bg" style="display:none"><span style="background-color:pink">Loading..</span></div>
-	<span id="loading-div" style="color:white;display:none">Please wait ...</span>
+	<div id="loading-bg" style="display:none"><span style="background-color:grey">Loading..</span></div>
+	<span id="loading-div" style="color:;display:none;padding:2px; text-align:center;font-size:14px">Please wait..</span>
 
     <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll;">
 	
@@ -81,6 +81,7 @@
 	<we-clickbutton></we-clickbutton>
 
 	<div id="wrapperDiv" class="wrapper" style="min-width:300px; font-size:11px">
+		
 		<div id="typeformDiv" class="typeform-widget" data-url="https://kevinoyowe.typeform.com/to/o85cTJ" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 400px; font-size:11px"></div> 
 		
 		<script>
@@ -102,9 +103,13 @@
 		
 		</script> 
 		
-		<div class="button" style="font-size: 14px; padding:10px; background-color:orange" onclick="javascript:history.back(-1);">
-			<a  style="text-decoration:none;color:white">(-- Back</a>
-		</div>
+		<p>
+			<div class="button" style="font-size: 14px; padding:10px; border-style:dotted; border-color:white" onclick="javascript:history.back(-1);">
+				<a  style="text-decoration:none;color:white">
+					<img src="arrow_left.png" alt="Back">
+				</a>
+			</div>
+		</p>
 		<br><br/>
 	</div>
 	

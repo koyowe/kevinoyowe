@@ -25,18 +25,24 @@
 		$(document).ready(function() {
 			
 			if($(window).width() < 768){
-				
 				$("#wrapperDiv").css("left", "0");
 				$("#copywrapperDiv").css("padding-top", "25em");
 				$("#projectIcon").css("display", "none");
 				$("#background").css("background-position", "top right");
 				$("#background").css("background-size", "contain");
-		  
 			}else{
-				
 				$("#wrapperDiv").css("left", "360px");
 				$("#background").css("background-position", "center right");
 				$("#background").css("background-size", "contain");
+			}
+			
+			var signalStrength = navigator.connection.effectiveType;
+			if ((signalStrength == '5g') || (signalStrength == '4g') || (signalStrength == '3g')){
+				$("#background").css("background-image", "url('robotk.jpg')");
+				$("#projectIcon").css("display", "block");
+				$("#projectIconCell").css("display", "block");
+			}else{
+				$("#projectIconCell").css("display", "none");
 			}
 		  
         });
@@ -48,7 +54,7 @@
 
     <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('robotk.jpg'); background-size:contain; background-position: center right; opacity: 0.4;">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:; background-size:contain; background-position: center right; opacity: 0.4;">
 		<source src="x.jpg" media="(min-width: 0)">
 	</we-background>
         
@@ -57,7 +63,7 @@
 	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
 		<div id="copywrapperDiv" class="copywrapper">
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext"><img id="projectIcon" src="robot.png" width="60px" style="border-radius:50%; border:1px solid white"> Robotics</we-lang>
+				<we-lang key="copytext"><table width="100%"><tr><td id="projectIconCell" width="60px"><img id="projectIcon" src="robot.png" width="60px" style="border-radius:50%; border:1px solid white; display:none"></td><td style="vertical-align:middle;padding-left:10px">Robotics</td></table></we-lang>
 				<hr style="border-color:red">
 			</div>
 			
@@ -75,8 +81,10 @@
 				</p> 
 				
 				<p>
-					<div class="button" style="font-size: 14px; padding:10px" onclick="javascript:history.back(-1);">
-						<a  style="text-decoration:none;color:white">(-- Back</a>
+					<div class="button" style="font-size: 14px; padding:10px; border-style:dotted; border-color:white" onclick="javascript:history.back(-1);">
+						<a  style="text-decoration:none;color:white">
+							<img src="arrow_left.png" alt="Back">
+						</a>
 					</div>
 				</p>
 				<br><br>

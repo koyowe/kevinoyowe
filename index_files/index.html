@@ -25,12 +25,14 @@
 		$(document).ready(function() {
 			
 			if($(window).width() < 768){
-				
 				$("#wrapperDiv").css("left", "0");
-		  
 			}else{
-				
 				$("#wrapperDiv").css("left", "360px");
+			}
+			
+			var signalStrength = navigator.connection.effectiveType;
+			if ((signalStrength == '5g') || (signalStrength == '4g') || (signalStrength == '3g')){
+				$("#background").css("background-image", "url('cat.png')");
 			}
 		  
         });
@@ -49,7 +51,7 @@
 
     <we-wallpaper onready="onReady()" class="animated--fade-in">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:url('cat.png'); background-size: contain; background-position: center right;">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:; background-size: contain; background-position: center right;">
 	</we-background>
         
 	<we-clickbutton></we-clickbutton>

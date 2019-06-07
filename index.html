@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
-	<meta property="og:description" content="Kevin Oyowe is a Kenyan computer programmer and health information systems developer currently serving in the United States as the Cancer Tracking System Programmer at the University of Kansas Medical Center.">
+	<meta property="og:description" content="View Kevin Oyowe Health Informatics, Electronic Medical Records (EMR), IT and Software Engineering Careers. Contact Kevin.">
 	<meta property="og:title" content="Kevin Oyowe">
 	<meta property="og:image" content="https://koyowe.github.io/index_files/koyowe_blue.png">
 	<meta property="og:type" content="website">
@@ -15,7 +15,7 @@
 	
 	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-	<meta name="description" content="Kevin Oyowe is a Kenyan computer programmer and health information systems developer currently serving in the United States as the Cancer Tracking System Programmer at the University of Kansas Medical Center">
+	<meta name="description" content="Kevin Oyowe is a Kenyan computer programmer and health information systems developer currently serving in the United States as the Cancer Tracking System Programmer at University of Kansas Medical Center">
 
 	<meta name="author" content="Kevin Oyowe">
 
@@ -79,16 +79,14 @@
 		$(document).ready(function() {
 			
 			if($(window).width() < 768){
-				
 				$("#profileDiv").css("left", "1em");
 				$("#profileDiv").css("right", "1em");
 				$("#profileDiv").css("width", "92%");
 				$("#viewportfolio").css("display", "block");
-		  
 			}else{
 				$("#profileDiv").css("left", "5em");
-				
 				$("#viewportfolio").css("display", "none");
+				$("#whatsappLink").css("display", "none");
 			}
 		  
         });
@@ -103,8 +101,7 @@
 </head>
 
 
-<body style="background-color:blue">
-	
+<body style="background-color:black">
 	<div class="root-node" >
 		<div class="app application" style="max-height:100%;overflow-y:scroll; background-color:black;">
 			<div id="profileDiv" class="transfer" route="[object Object]" style="height:27.625em; top:50%;">
@@ -127,11 +124,11 @@
 						
 						<p>Kansas City, United States</p>
 						
-						<div style="height:1.0em"></div>
+						<div style="height:0.75em"></div>
 						
 						<div id="viewportfolio" onclick="hideProfileDiv()" style="text-align:center; padding:4px; display:none">
 							<p>
-								<span style="border:1px solid pink; padding:1.25em; border-radius:5px; cursor:pointer; color:white;background-color:rgb(64, 159, 255)">
+								<span style="border:1px solid pink; padding:0.75em; font-size:18px; border-radius:5px; cursor:pointer; color:white;background-color:rgb(64, 159, 255)">
 									View Portfolio
 								</span>
 							</p>
@@ -150,7 +147,7 @@
 							<a href="https://linkedin.com/in/koyowe" style="text-decoration:none" target="blank_3">
 								<img src="./index_files/linkedin_logo.jpg" height=""  width="20%">
 							</a>
-							<a href="whatsapp://send?text=Hi, please check out my portfolio on this link and send me your feedback. Thanks : https://koyowe.github.io" style="text-decoration:none" target="blank_3">
+							<a id="whatsappLink" href="whatsapp://send?text=Hi, please check out my portfolio on this link and send me your feedback. Thanks : https://koyowe.github.io" style="text-decoration:none" target="blank_3">
 								<img src="./index_files/whatsapp_logo.png" height=""  width="20%">
 							</a>
 						
@@ -169,7 +166,7 @@
 				</div>
 			</div>
 		  
-			<nav id="navDiv" class="nav nav--loaded">
+			<nav id="navDiv" class="nav nav--loaded" style="right:30px">
 				<ul class="nav__items">
 					<li class="nav__item">
 						<a class="nav__label" onclick="openIndex()">Home</a>
