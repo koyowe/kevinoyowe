@@ -26,81 +26,75 @@
 			
 			if($(window).width() < 768){
 				$("#wrapperDiv").css("left", "0");
+				$("#copywrapperDiv").css("padding-top", "32em");
+				$("#projectIcon").css("display", "none");
+				$("#background").css("background-position", "top right");
+				$("#background").css("background-size", "contain");
+		  
 			}else{
 				$("#wrapperDiv").css("left", "360px");
+				$("#background").css("background-position", "bottom right");
+				$("#background").css("background-size", "60%");
 			}
 			
 			var signalStrength = navigator.connection.effectiveType;
 			if ((signalStrength == '5g') || (signalStrength == '4g') || (signalStrength == '3g')){
-				$("#background").css("background-image", "url('cat.png')");
+				$("#background").css("background-image", "url('emr.png')");
+				$("#projectIcon").css("display", "block");
+				$("#projectIconCell").css("display", "block");
+			}else{
+				$("#projectIconCell").css("display", "none");
 			}
 		  
         });
 	</script>
-	
-	<style>
-		.nav.nav--loaded {
-			background-color:red;
-			right:4.0em;
-		}
-	</style>
 
 </head>
 
 <body>
 
-    <we-wallpaper onready="onReady()" class="animated--fade-in">
+    <we-wallpaper onready="onReady()" class="animated--fade-in" style="max-height:100%;overflow-y:scroll">
 	
-	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:; background-size: contain; background-position: center right;">
+	<we-background id="background" onload="onBackgroundLoad()" fullscreen="" autoload="" style="background-image:; opacity:0.5; background-attachment: fixed; height:200vh">
 	</we-background>
         
 	<we-clickbutton></we-clickbutton>
-	
-	<!--<div style="background:transparent;height:350px">
-	</div>-->
 
 	<div id="wrapperDiv" class="wrapper" style="min-width:300px">
-		<div class="copywrapper">
+		<div id="copywrapperDiv" class="copywrapper" >
 			<div class="headline" style="font-size: 31.9889px;" >
-				<we-lang key="copytext">Software Developer</we-lang>
-				<hr>
+				<we-lang key="copytext"><table ><tr><td id="projectIconCell" width="60px"><img id="projectIcon" src="omrs-button.png" style="border:1px solid white; border-radius:50%; display:none"></td><td style="vertical-align:middle;padding-left:10px">Health Informatics Career</td></table></we-lang>
+				<hr style="border-color:red">
 			</div>
 			
-			
-			<div class="button" style="font-size: 16.095px; background-color:rgb(64, 159, 255)" onClick="openProfile()">
-				<we-lang key="buttontext">Profile</we-lang>
-			</div>
-			
-			<div class="button" style="font-size: 16.095px;" onClick="openCatSystem()">
-				<we-lang key="buttontext">CATSystem</we-lang>
-			</div>
-			
-			<div class="button" style="font-size: 16.095px;" onClick="openEMCHR()">
-				<we-lang key="buttontext">eMCHR</we-lang>
-			</div>
-			
-			<div class="button" style="font-size: 16.095px;" onClick="openProMS()">
-				<we-lang key="buttontext">ProMS</we-lang>
-			</div>
-			
-			<div class="button" style="font-size: 16.095px;" onClick="openRobotics()">
-				<we-lang key="buttontext">Robotics</we-lang>
-			</div>
-			
-			<div class="button" style="font-size: 16.095px;" onClick="otherProjects()">
-				<we-lang key="buttontext">Other</we-lang>
-			</div>
-			
-			<div class="button" style="font-size: 16.095px; background-color:purple" onClick="openBlog()">
-				<we-lang key="buttontext">Blog</we-lang>
-			</div>
-			<!--
-			<div class="button" style="font-size: 16.095px; background-color:purple" onClick="openDonate()">
-				<we-lang key="buttontext">Donate $</we-lang>
-			</div>
-			-->
-			<div id="feedback" class="button" style="font-size: 16.095px; background-color:orange" onClick="openFeedBack()">
-				<we-lang key="buttontext">Feed Back</we-lang>
+			<div class="headline" style="font-size: 18px;" >
+				<p>
+				<u><b>2019-Date</b></u>: CATSystem Programmer - Cancer Tracking System at the University of Kansas Medical Centre.
+				</p> 
+				<br>
+				<p>
+					<u><b>2018-2019</b></u>: Health Informatics Coordinator at Centre for Health Solutions Kenya (CHS).
+				</p> 
+				<br>
+				<p>
+					<u><b>2017-2018</b></u>: Programmer, RCTP-FACES eMCHR Project.
+				</p> 
+				<br>
+				<p>
+					<u><b>2015-2016</b></u>: Assistant Programmer, KEMRI-RCTP FACES Program.
+				</p> 
+				<br>
+				<p>
+					<u><b>2014</b></u>: Intern IT, KEMRI-RCTP FACES Program.
+				</p> 
+				<p>
+					<div class="button" style="font-size: 14px; padding:10px; border-style:dotted; border-color:white" onclick="javascript:history.back(-1);">
+						<a  style="text-decoration:none;color:white">
+							<img src="arrow_left.png" alt="Back">
+						</a>
+					</div>
+				</p>
+				<br><br>
 			</div>
 			
 		</div>
@@ -127,38 +121,6 @@
 	<script type="text/javascript">
 		function openCatSystem() {
 			window.location.href = "../catsystem.html";
-		}
-		
-		function openProfile() {
-			window.location.href = "../profile.html";
-		}
-		
-		function openEMCHR() {
-			window.location.href = "../emchr.html";
-		}
-		
-		function openProMS() {
-			window.location.href = "../proms.html";
-		}
-		
-		function otherProjects() {
-			window.location.href = "../otherprojects.html";
-		}
-		
-		function openBlog() {
-			window.location.href = "../blog.html";
-		}
-		
-		function openRobotics() {
-			window.location.href = "../robotics.html";
-		}
-		
-		function openDonate() {
-			window.location.href = "../donate.html";
-		}
-		
-		function openFeedBack() {
-			window.location.href = "../feedback.html";
 		}
 	</script>
 	
