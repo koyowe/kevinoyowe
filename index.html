@@ -181,7 +181,7 @@
 					</li>
 					
 					<li class="nav__item">
-						<a class="nav__label" onclick="openEMRHIS()">Profile</a>
+						<a class="nav__label" onclick="openProfile()">Profile</a>
 					</li>
 					<!--<li class="nav__item">
 						<a class="nav__label" onclick="openDonate()">Donate</a>
@@ -206,9 +206,9 @@
 			}
 		}
 		
-		function openEMRHIS() {
+		function openProfile() {
 			
-			document.getElementById('iFrame').src = "emrhis.html";
+			document.getElementById('iFrame').src = "profile.html";
 			if($(window).width() < 768){
 				hideProfileDiv();
 			}
