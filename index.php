@@ -15,15 +15,15 @@
 <noscript><link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Roboto:300,700,300italic,700italic|Varela+Round&amp;subset=latin,latin-ext"></noscript>
 <link rel="stylesheet" media="screen" href="./index_files/main_v4.1ae63c2cc0ee6b0ba6aa.bundle.css" ref="preload" as="style" onload="this.rel=&#39;stylesheet&#39;">
 <noscript><link rel="stylesheet" media="screen" href="https://static-assets.strikinglycdn.com/themes/fresh/main_v4.1ae63c2cc0ee6b0ba6aa.bundle.css" ref="preload" as="style" onload="if(media!==&#39;screen&#39;)media=&#39;screen&#39;"></noscript>
-<link href="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_64,w_64,f_auto,q_auto/9621/android-icon-192x192_ctez8r.png" rel="shortcut icon" type="image/x-icon">
+<link href="./index_files/ko_logo.png" rel="shortcut icon" type="image/x-icon">
 <link href="http://www.kevinoyowe.com/i/pwa/manifest.json" rel="manifest">
-<link href="./index_files/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" rel="apple-touch-icon" sizes="60x60">
-<link href="./index_files/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" rel="apple-touch-icon" sizes="76x76">
-<link href="./index_files/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" rel="apple-touch-icon" sizes="120x120">
-<link href="./index_files/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" rel="apple-touch-icon" sizes="152x152">
-<meta content="I&#39;m Gary Sheng" property="og:title">
+<link href="./index_files/katienme.jpg" rel="apple-touch-icon" sizes="60x60">
+<link href="./index_files/katienme.jpg" rel="apple-touch-icon" sizes="76x76">
+<link href="./index_files/katienme.jpg" rel="apple-touch-icon" sizes="120x120">
+<link href="./index_files/katienme.jpg" rel="apple-touch-icon" sizes="152x152">
+<meta content="I&#39;m Kevin Oyowe" property="og:title">
 <meta content="http://www.kevinoyowe.com/" property="og:url">
-<meta content="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/9621/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" property="og:image">
+<meta content="./index_files/ko_logo.png" property="og:image">
 <meta content="Kevin Oyowe - Health Informatics" property="og:site_name">
 <meta content="Programmer, Cancer Tracking System. Analyst, HIV Infant Tracking System.  Former, CHS-Kenya Health Informatics Coordinator. Former, FACES-Kenya Assistant Programmer. Nyabondo High School and Kisumu National Polytechnic alumnus. Founder of Digital Health Interventions (DHI).
 
@@ -32,13 +32,13 @@ I am passionate about long-term electronic medical information storage, privacy,
 <meta content="Programmer, Cancer Tracking System. Analyst, HIV Infant Tracking System.  Former, CHS-Kenya Health Informatics Coordinator. Former, FACES-Kenya Assistant Programmer. Nyabondo High School and Kisumu National Polytechnic alumnus. Founder of Digital Health Interventions (DHI).
 
 I am passionate about long-term electronic medical information storage, privacy, and security for lasting digital health interventions.">
-<meta content="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/9621/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" itemprop="image">
+<meta content="./index_files/ko_logo.png" itemprop="image">
 <meta content="summary_large_image" name="twitter:card">
 <meta content="Kevin Oyowe - Health Informatics" name="twitter:title">
 <meta content="Programmer, Cancer Tracking System. Analyst, HIV Infant Tracking System.  Former, CHS-Kenya Health Informatics Coordinator. Former, FACES-Kenya Assistant Programmer. Nyabondo High School and Kisumu National Polytechnic alumnus. Founder of Digital Health Interventions (DHI).
 
 I am passionate about long-term electronic medical information storage, privacy, and security for lasting digital health interventions." name="twitter:description">
-<meta content="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/9621/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" name="twitter:image">
+<meta content="./index_files/ko_logo.png" name="twitter:image">
 <meta content="Programmer, Cancer Tracking System. Analyst, HIV Infant Tracking System.  Former, CHS-Kenya Health Informatics Coordinator. Former, FACES-Kenya Assistant Programmer. Nyabondo High School and Kisumu National Polytechnic alumnus. Founder of Digital Health Interventions (DHI).
 
 I am passionate about long-term electronic medical information storage, privacy, and security for lasting digital health interventions." name="description">
@@ -179,7 +179,7 @@ font-family: 'bebas neue', 'gotham rounded', 'open-sans', sans-serif !important;
 			if($(window).width() < 768){
 				$("#bannerDiv").css("background-image", "url('./index_files/menkatie.jpg')");
 			}else{
-				$("#bannerDiv").css("background-image", "url('./index_files/twitter1024.png')");
+				$("#bannerDiv").css("background-image", "url('./index_files/katienme.jpg')");
 			}
 		  
         });
@@ -259,7 +259,7 @@ font-family: 'bebas neue', 'gotham rounded', 'open-sans', sans-serif !important;
 		<ul class="slides s-page-1" style="display: block;">
 		<li class="slide s-section-1 s-first-visible-section" id="section-f_de4cf792-9bd2-4c70-85f6-5117032a5a08" style=""><div class="waypoint"></div><a class="section-anchor"></a>
 		<div>
-		  <div id="bannerDiv" class="s-bg-image s-bg-light-text s-new-title-section s-section _animate-background" style="background-repeat: no-repeat; background-size: cover; background-color:; background-position: center center; background-image: url('index_files/twitter1024.png'); min-height: 300px; background-attachment: fixed; padding-top: 222px; padding-bottom: 222px;">
+		  <div id="bannerDiv" class="s-bg-image s-bg-light-text s-new-title-section s-section _animate-background" style="background-repeat: no-repeat; background-size: cover; background-color:; background-position: center center; min-height: 300px; background-attachment: fixed; padding-top: 222px; padding-bottom: 222px;">
 		  <div class="container" style="z-index: 3;"><div class="sixteen columns"><div class="s-title-group s-only-title-group "><div class="s-subtitle"><div class="s-component s-text s-animation-page-slide_in"><h4 class="s-component-content s-font-heading"><p style="font-size: 130%;" class="s-text-color-white"><em>Hello, I'm</em></p></h4></div></div><div class="s-title sb-title-center-align has-fresh-line"><div class="s-component s-text s-animation-page-slide_in"><h1 class="s-component-content s-font-title"><p style="text-align: center; font-size: 130%;"><strong>Kevin Oyowe</strong></p></h1></div></div></div></div></div>
 		</div>
 		</div>
@@ -294,7 +294,7 @@ font-family: 'bebas neue', 'gotham rounded', 'open-sans', sans-serif !important;
 
 
 <li class="slide s-section-3" id="section-f_6abc47a5-9d5f-4c6a-8d28-67ae617e4694" style=""><div class="waypoint"></div><a class="section-anchor"></a><div>
-  <div class=" background-image lazyloaded background-image transition s-bg-image s-bg-light-text s-new-hero-section s-section s-signup-section _animate-background background-image" data-bg="https://uploads.strikinglycdn.com/static/backgrounds/patterns/1.jpg" style="background-repeat: no-repeat; background-size: cover; background-color:red; background-position: -2px -212.901px; background-image: url(./index_files/catsystem.jpg); background-attachment: fixed; background-blend-mode: darken;">
+  <div class=" background-image lazyloaded background-image transition s-bg-image s-bg-light-text s-new-hero-section s-section s-signup-section _animate-background background-image" data-bg="https://uploads.strikinglycdn.com/static/backgrounds/patterns/1.jpg" style="background-repeat: no-repeat; background-size: cover; background-color:red; background-position: -2px -212.901px; background-image: url(./index_files/catsystem.jpg); background-attachment: fixed;">
   <div class="container s-rva s-layout-signupNoImage" style=""><div class=""></div><div class="s-rva-text sixteen columns"><div class=""><div class="s-title-group  " style=""><div class="s-title has-fresh-line"><div class="s-component s-text"><h2 class="s-component-content s-font-title"><div><strong>About Me</strong></div></h2></div></div><div class="s-subtitle"><div class="s-component s-text"><h4 class="s-component-content s-font-heading"><p>I am passionate about long-term electronic medical information storage, privacy, and security for lasting digital health interventions.</span></p></h4></div></div></div></div></div></div>
 </div>
 </div></li>
@@ -416,34 +416,6 @@ font-family: 'bebas neue', 'gotham rounded', 'open-sans', sans-serif !important;
 <div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="9"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/sky_blue.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/sky_blue.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/fgxxztw7649xwoscbr1z.jpg"></div></div></div></a></div></div></div></div>
 
 </div></div></div></div></div></li>
-
-<li class="slide s-section-5" id="section-f_6966d170-f0cd-47cf-a147-efb1a6d0fc18"><div class="waypoint"></div><a class="section-anchor"></a>
-<div class="lazyload background-image transition lazyloaded s-bg-gray s-gallery-section s-section _animate-background background-image" data-react-style="{}" style="background-attachment: fixed;"><div class="video-bg-wrap" data-video-html=""></div><div class="full-width-gallery"><div class="container"><div class="columns sixteen"><div class="s-title-group  "><div class="s-title has-fresh-line"><div class="s-component s-text s-animation-page-slide_in"><h2 class="s-component-content s-font-title"><p><strong>Gallery</strong></p></h2></div></div><div class="s-subtitle"><div class="s-component s-text s-animation-page-slide_in"><h4 class="s-component-content s-font-heading"><p>Picture Album 3</p></h4></div></div></div></div></div><div class="s-gallery full-width s-gallery-columns-6">
-
-<div><div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="0"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/small_body.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/small_body.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/wpply9xpgeeruqbvkqvg.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="1"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/t_inspekta.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/t_inspekta.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/qdfuzeguvomqif06huwk.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="2"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/that_selfie.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/that_selfie.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/mpbx8lbk2rt2lxgjqtpw.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="3"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/white_summer.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/white_summer.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/z6xglocgrdt9bk9iwzmg.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="4"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/winter_break.jpg" data-src=" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/winter_break.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/v6lmyw0u2akswvooobo6.png"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="5"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/work_office.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/work_office.jpg" data-src="//user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,f_auto,g_faces:center,h_200,q_80,w_200/9621/trees_nhrdxj.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="6"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/x.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/x.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/jghk9flh8jquyc8zff00.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="7"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href=src="./index_files/gallery/x.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/x.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/sug6cskkvwmawt8hmthy.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="8"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="./index_files/gallery/x.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/x.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/dfjtxytlzzco56ejnlni.jpg"></div></div></div></a></div></div></div></div>
-
-<div class="s-component s-gallery-item  s-animation-page-slide_in" data-sorting-index="9"><div><div class="s-component-content"><div class="image-wrapper"><a class="item" data-description="" href="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,h_900,w_1200/fgxxztw7649xwoscbr1z.jpg" data-type="image" data-fancybox="gallery_2"><div><div class="s-ratio-box" style="max-width: 500px; max-height: 500px;"><div class="s-ratio-fill" style="padding-bottom: 100%;"></div><div><img alt="" title="" class="crop-default lazyloaded" data-description="" width="500" height="500" src="./index_files/gallery/x.jpg" data-src="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200/fgxxztw7649xwoscbr1z.jpg"></div></div></div></a></div></div></div></div>
-
-</div></div></div></div></div></li>
-	
-	
-<li class="slide s-section-8 s-last-section-no-footer s-hidden-section" id="section-f_a8c21440-5e86-4155-b320-67f0494c4e28"><div class="waypoint"></div><a class="section-anchor"></a><div class="waypoint"></div></li>
 
 </ul>
 </div>
