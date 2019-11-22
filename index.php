@@ -184,6 +184,60 @@ font-family: 'bebas neue', 'gotham rounded', 'open-sans', sans-serif !important;
 		  
         });
 	</script>
+	
+	<style>
+		.zone {
+		  border-radius: 100%;
+		  width: 300px;
+		  height: 300px;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  border: 1px dashed #818181;
+		  flex-shrink: 0;
+		}
+
+		button {
+		  border: 0;
+		  position: relative;
+		  padding: 0;
+		  cursor: pointer;
+		  background: transparent;
+		  outline: none;
+		}
+
+		.bodymovin {
+		  width: 62px; /* 310 */
+		  height: 34px; /* 170 */
+		  position: absolute;
+		  top: -29px;
+		  right: 4%;
+		  z-index: 0;
+		  pointer-events: none;
+		  transition: transform 0s;
+		}
+
+		.bodymovin--hidden {
+		  transform: translateY(30px);
+		  transition: transform 0.55s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+		}
+
+		.text {
+		  position: relative;
+		  padding: 15px 34px;
+		  color: #fff;
+		  font-size: 16px;
+		  font-weight: 600;
+		  display: block;
+		  background: #442770;
+		  border-radius: 3px;
+		  transition: background 0.2s ease-in-out;
+		}
+
+		button:hover .text {
+		  background: #7934a0;
+		}
+	</style>
 
 </head>
 
@@ -260,7 +314,24 @@ font-family: 'bebas neue', 'gotham rounded', 'open-sans', sans-serif !important;
 		<li class="slide s-section-1 s-first-visible-section" id="section-f_de4cf792-9bd2-4c70-85f6-5117032a5a08" style=""><div class="waypoint"></div><a class="section-anchor"></a>
 		<div>
 		  <div id="bannerDiv" class="s-bg-image s-bg-light-text s-new-title-section s-section _animate-background" style="background-repeat: no-repeat; background-size: cover; background-color:; background-position: center center; min-height: 300px; background-attachment: fixed; padding-top: 222px; padding-bottom: 222px;">
-		  <div class="container" style="z-index: 3;"><div class="sixteen columns"><div class="s-title-group s-only-title-group "><div class="s-subtitle"><div class="s-component s-text s-animation-page-slide_in"><h4 class="s-component-content s-font-heading"><p style="font-size: 130%;" class="s-text-color-white"><em>Hello, I'm</em></p></h4></div></div><div class="s-title sb-title-center-align has-fresh-line"><div class="s-component s-text s-animation-page-slide_in"><h1 class="s-component-content s-font-title"><p style="text-align: center; font-size: 130%;"><strong>Kevin Oyowe</strong></p></h1></div></div></div></div></div>
+		  <div class="container" style="z-index: 3;"><div class="sixteen columns"><div class="s-title-group s-only-title-group "><div class="s-subtitle"><div class="s-component s-text s-animation-page-slide_in"><h4 class="s-component-content s-font-heading"><p style="font-size: 130%;" class="s-text-color-white"><em>Hello, I'm</em></p></h4></div></div>
+		  <div class="s-title sb-title-center-align has-fresh-line"><div class="s-component s-text s-animation-page-slide_in"><h1 class="s-component-content s-font-title"><p style="text-align: center; font-size: 130%;"><strong>Kevin Oyowe</strong></p></h1>
+			<table width="100%" id="centurion">
+			<tr>
+			<td style="width:33%"></td>
+			<td style="width:34%">
+			<div class="zone">
+			  <button>
+				<span class="bodymovin"></span>
+				<span class="text">Let's Meet</span>
+			  </button>
+			</div>
+			</td>
+			<td style="width:33%"></td>
+			</tr>
+			</table>
+		  </div></div>
+		  </div></div></div>
 		</div>
 		</div>
 		</li>
